@@ -2,43 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <script>
-        /* ── iOS Safari zoom-on-focus fix ──────────────────────────────
-           Safari auto-zooms when a focused input's font-size is < 16px.
-           Even with font-size:16px set in CSS, Safari can still zoom
-           due to its layout heuristics. The only 100% reliable fix is
-           to temporarily add maximum-scale=1 to the viewport meta while
-           any input/select/textarea has focus, then remove it on blur so
-           normal user pinch-zoom is fully restored.
-        ─────────────────────────────────────────────────────────────── */
-        (function() {
-            var viewport = document.querySelector('meta[name="viewport"]');
-            if (!viewport) return;
-            var originalContent = viewport.getAttribute('content');
-            var zoomedContent = originalContent
-                .replace(/,?\s*maximum-scale=[^,]*/gi, '')
-                .replace(/,?\s*user-scalable=[^,]*/gi, '')
-                + ', maximum-scale=1';
-
-            function lockZoom() { viewport.setAttribute('content', zoomedContent); }
-            function unlockZoom() { viewport.setAttribute('content', originalContent); }
-
-            document.addEventListener('focusin', function(e) {
-                var t = e.target;
-                if (t && (t.tagName === 'INPUT' || t.tagName === 'SELECT' || t.tagName === 'TEXTAREA')) {
-                    lockZoom();
-                }
-            }, true);
-            document.addEventListener('focusout', function(e) {
-                var t = e.target;
-                if (t && (t.tagName === 'INPUT' || t.tagName === 'SELECT' || t.tagName === 'TEXTAREA')) {
-                    // Slight delay so the keyboard dismiss animation doesn't jank
-                    setTimeout(unlockZoom, 300);
-                }
-            }, true);
-        })();
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
     <meta name="color-scheme" content="dark light">
     <title>IPABD - App Library & iOS Store</title>
     <meta name="description" content="IPABD - Discover and manage iOS apps. Browse premium apps, libraries, and tools for iOS development and deployment. 100% client-side, secure & fast.">
