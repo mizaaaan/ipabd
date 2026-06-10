@@ -359,6 +359,8 @@
         .app-icon-large { width: 80px; height: 80px; border-radius: 20px; margin-bottom: 12px; }
         .app-icon-medium { width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0; }
         .app-name { font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+        .app-name a { text-decoration: none; color: inherit; }
+        .app-name a:hover { text-decoration: none; color: var(--accent-primary); }
         .app-category { font-size: 11px; color: var(--text-muted); margin-bottom: 8px; }
         .app-rating { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 11px; margin-bottom: 12px; }
         .stars { color: #FFB800; }
@@ -479,12 +481,30 @@
                     <div class="phone-mockup">
                         <div class="phone-screen">
                             <div class="app-icons-grid">
-                                <div class="app-icon gradient-1"></div>
-                                <div class="app-icon gradient-2"></div>
-                                <div class="app-icon gradient-3"></div>
-                                <div class="app-icon gradient-4"></div>
-                                <div class="app-icon gradient-1"></div>
-                                <div class="app-icon gradient-2"></div>
+                                <div class="app-icon" style="display: flex; align-items: center; justify-content: center; overflow: hidden; background: none; opacity: 1;">
+                                    <img src="apps/logos/snapchat.png" alt="IPABD Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                                </div>
+                                <div class="app-icon" style="display: flex; align-items: center; justify-content: center; overflow: hidden; background: none; opacity: 1;">
+                                    <img src="apps/logos/instagram.png" alt="IPABD Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                                </div>
+                                <div class="app-icon" style="display: flex; align-items: center; justify-content: center; overflow: hidden; background: none; opacity: 1;">
+                                    <img src="apps/logos/claude.webp" alt="IPABD Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                                </div>
+                                <div class="app-icon" style="display: flex; align-items: center; justify-content: center; overflow: hidden; background: none; opacity: 1;">
+                                    <img src="apps/logos/chatgpt.png" alt="IPABD Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                                </div>
+                                <div class="app-icon" style="display: flex; align-items: center; justify-content: center; overflow: hidden; background: none; opacity: 1;">
+                                    <img src="apps/logos/tiktok.png" alt="IPABD Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                                </div>
+                                <div class="app-icon" style="display: flex; align-items: center; justify-content: center; overflow: hidden; background: none; opacity: 1;">
+                                    <img src="apps/logos/spotify.png" alt="IPABD Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                                </div>
+                                <div class="app-icon" style="display: flex; align-items: center; justify-content: center; overflow: hidden; background: none; opacity: 1;">
+                                    <img src="apps/logos/youtube.png" alt="IPABD Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                                </div>
+                                <div class="app-icon" style="display: flex; align-items: center; justify-content: center; overflow: hidden; background: none; opacity: 1;">
+                                    <img src="apps/logos/facebook.png" alt="IPABD Logo" style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -523,7 +543,7 @@
                 <div class="app-card trending-card">
                     <div class="app-badge">Featured</div>
                     <div class="app-icon-large gradient-1"></div>
-                    <h3 class="app-name">SwiftUI Pro</h3>
+                    <h3 class="app-name"><a href="apps/app.html?id=1">SwiftUI Pro</a></h3>
                     <p class="app-category">Development</p>
                     <div class="app-rating">
                         <span class="stars">★★★★★</span>
@@ -534,7 +554,7 @@
                 <div class="app-card trending-card">
                     <div class="app-badge">Featured</div>
                     <div class="app-icon-large gradient-1"></div>
-                    <h3 class="app-name">SwiftUI Pro</h3>
+                    <h3 class="app-name"><a href="apps/app.html?id=1">SwiftUI Pro</a></h3>
                     <p class="app-category">Development</p>
                     <div class="app-rating">
                         <span class="stars">★★★★★</span>
@@ -545,7 +565,7 @@
                 <div class="app-card trending-card">
                     <div class="app-badge">Hot</div>
                     <div class="app-icon-large gradient-2"></div>
-                    <h3 class="app-name">Xcode Toolkit</h3>
+                    <h3 class="app-name"><a href="apps/app.html?id=1">Xcode Studio</a></h3>
                     <p class="app-category">Development</p>
                     <div class="app-rating">
                         <span class="stars">★★★★☆</span>
@@ -556,7 +576,7 @@
                 <div class="app-card trending-card">
                     <div class="app-badge">Hot</div>
                     <div class="app-icon-large gradient-2"></div>
-                    <h3 class="app-name">Xcode Toolkit</h3>
+                    <h3 class="app-name"><a href="apps/app.html?id=1">Xcode Studio</a></h3>
                     <p class="app-category">Development</p>
                     <div class="app-rating">
                         <span class="stars">★★★★☆</span>
@@ -567,7 +587,7 @@
                 <div class="app-card trending-card">
                     <div class="app-badge">New</div>
                     <div class="app-icon-large gradient-3"></div>
-                    <h3 class="app-name">Debugger Pro</h3>
+                    <h3 class="app-name"><a href="apps/app.html?id=3">Debugger Pro</a></h3>
                     <p class="app-category">Tools</p>
                     <div class="app-rating">
                         <span class="stars">★★★★★</span>
@@ -578,7 +598,7 @@
                 <div class="app-card trending-card">
                     <div class="app-badge">New</div>
                     <div class="app-icon-large gradient-3"></div>
-                    <h3 class="app-name">Debugger Pro</h3>
+                    <h3 class="app-name"><a href="apps/app.html?id=3">Debugger Pro</a></h3>
                     <p class="app-category">Tools</p>
                     <div class="app-rating">
                         <span class="stars">★★★★★</span>
@@ -589,7 +609,7 @@
                 <div class="app-card trending-card">
                     <div class="app-badge">Popular</div>
                     <div class="app-icon-large gradient-4"></div>
-                    <h3 class="app-name">App Analyzer</h3>
+                    <h3 class="app-name"><a href="apps/app.html?id=4">App Analyzer</a></h3>
                     <p class="app-category">Analytics</p>
                     <div class="app-rating">
                         <span class="stars">★★★★☆</span>
@@ -600,7 +620,7 @@
                 <div class="app-card trending-card">
                     <div class="app-badge">Popular</div>
                     <div class="app-icon-large gradient-4"></div>
-                    <h3 class="app-name">App Analyzer</h3>
+                    <h3 class="app-name"><a href="apps/app.html?id=4">App Analyzer</a></h3>
                     <p class="app-category">Analytics</p>
                     <div class="app-rating">
                         <span class="stars">★★★★☆</span>
@@ -671,7 +691,7 @@
                 <div class="app-card">
                     <div class="app-icon-medium gradient-1"></div>
                     <div class="app-info">
-                        <h3 class="app-name">SwiftUI Pro</h3>
+                        <h3 class="app-name"><a href="apps/app.html?id=1">SwiftUI Pro</a></h3>
                         <p class="app-category">Development Tools</p>
                         <div class="app-rating">
                             <span class="stars">★★★★★</span>
@@ -684,7 +704,7 @@
                 <div class="app-card">
                     <div class="app-icon-medium gradient-1"></div>
                     <div class="app-info">
-                        <h3 class="app-name">SwiftUI Pro</h3>
+                        <h3 class="app-name"><a href="apps/app.html?id=1">SwiftUI Pro</a></h3>
                         <p class="app-category">Development Tools</p>
                         <div class="app-rating">
                             <span class="stars">★★★★★</span>
@@ -697,7 +717,7 @@
                 <div class="app-card">
                     <div class="app-icon-medium gradient-2"></div>
                     <div class="app-info">
-                        <h3 class="app-name">Xcode Toolkit</h3>
+                        <h3 class="app-name"><a href="apps/app.html?id=1">Xcode Studio</a></h3>
                         <p class="app-category">Development Tools</p>
                         <div class="app-rating">
                             <span class="stars">★★★★☆</span>
@@ -710,7 +730,7 @@
                 <div class="app-card">
                     <div class="app-icon-medium gradient-2"></div>
                     <div class="app-info">
-                        <h3 class="app-name">Xcode Toolkit</h3>
+                        <h3 class="app-name"><a href="apps/app.html?id=1">Xcode Studio</a></h3>
                         <p class="app-category">Development Tools</p>
                         <div class="app-rating">
                             <span class="stars">★★★★☆</span>
@@ -723,7 +743,7 @@
                 <div class="app-card">
                     <div class="app-icon-medium gradient-3"></div>
                     <div class="app-info">
-                        <h3 class="app-name">Debugger Pro</h3>
+                        <h3 class="app-name"><a href="apps/app.html?id=3">Debugger Pro</a></h3>
                         <p class="app-category">Developer Tools</p>
                         <div class="app-rating">
                             <span class="stars">★★★★★</span>
@@ -736,7 +756,7 @@
                 <div class="app-card">
                     <div class="app-icon-medium gradient-4"></div>
                     <div class="app-info">
-                        <h3 class="app-name">App Analyzer</h3>
+                        <h3 class="app-name"><a href="apps/app.html?id=1">App Analyzer</a></h3>
                         <p class="app-category">Analytics & Insights</p>
                         <div class="app-rating">
                             <span class="stars">★★★★☆</span>
@@ -749,7 +769,7 @@
                 <div class="app-card">
                     <div class="app-icon-medium gradient-1"></div>
                     <div class="app-info">
-                        <h3 class="app-name">IPA Manager</h3>
+                        <h3 class="app-name"><a href="apps/app.html?id=1">IPA Manager</a></h3>
                         <p class="app-category">Package Management</p>
                         <div class="app-rating">
                             <span class="stars">★★★★★</span>
@@ -762,7 +782,7 @@
                 <div class="app-card">
                     <div class="app-icon-medium gradient-2"></div>
                     <div class="app-info">
-                        <h3 class="app-name">Code Inspector</h3>
+                        <h3 class="app-name"><a href="apps/app.html?id=1">Code Inspector</a></h3>
                         <p class="app-category">Code Analysis</p>
                         <div class="app-rating">
                             <span class="stars">★★★★★</span>
