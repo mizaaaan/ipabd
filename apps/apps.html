@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
     <meta name="color-scheme" content="dark light">
-    <title>Xcode Studio - IPABD</title>
+    <title>App Details - IPABD</title>
     <meta name="description" content="App details on IPABD - iOS App Library">
     <meta name="theme-color" content="#FCFCFD" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#07080B" media="(prefers-color-scheme: dark)">
@@ -428,124 +428,48 @@
 
     <script>
         // ========== APP DATABASE ==========
+        // Update RELEASE_TAG below once you publish your GitHub Release with the .ipa files attached.
+        const RELEASE_TAG = "v1.0";
+        const RELEASE_BASE = `https://github.com/mizaaaan/ipabd/releases/download/${RELEASE_TAG}/`;
+
         const appsDatabase = {
             1: {
-                name: "Xcode Studio",
-                icon: "💻",
-                category: "Development",
-                gradient: "gradient-1",
-                rating: 4.8,
-                ratingCount: 2847,
-                ratingBars: [85, 12, 2, 1, 0],
-                developer: "Apple Inc.",
-                version: "15.2.1",
-                size: "14.5 GB",
-                updated: "Jan 15, 2024",
-                requires: "iOS 16.0+",
-                language: "English, Spanish, French, German, Chinese",
-                price: "Free",
-                subtitle: "Professional IDE for iOS development",
-                description: "Xcode Studio is the official integrated development environment for iOS, iPadOS, macOS, tvOS, and watchOS. Develop beautiful apps with a powerful IDE featuring advanced code editing, debugging, and visual design tools.",
-                features: [
-                    { icon: "⚡", name: "Code Completion", desc: "Intelligent code suggestions powered by AI" },
-                    { icon: "🐛", name: "Advanced Debugger", desc: "Step-by-step debugging with breakpoints" },
-                    { icon: "🎨", name: "Visual Designer", desc: "Drag-and-drop UI builder for SwiftUI" },
-                    { icon: "📊", name: "Performance Tools", desc: "Real-time app performance monitoring" },
-                    { icon: "🔗", name: "Git Integration", desc: "Built-in version control support" },
-                    { icon: "📚", name: "Documentation", desc: "Comprehensive API reference library" }
-                ],
-                reviews: [
-                    { author: "Alex Chen", date: "2 days ago", stars: 5, title: "Best development tool", body: "Xcode Studio has revolutionized my iOS development workflow. The AI-powered code completion saves hours every week." },
-                    { author: "Maria Silva", date: "1 week ago", stars: 5, title: "Professional grade IDE", body: "Finally a tool that matches the complexity of modern app development. SwiftUI integration is seamless." },
-                    { author: "James Wilson", date: "2 weeks ago", stars: 4, title: "Great but resource heavy", body: "Powerful features but can be memory intensive. Still the best choice for serious iOS developers." }
-                ]
-            },
-            2: {
-                name: "Swift Playground",
-                icon: "🎮",
-                category: "Education",
+                name: "Salat Tracker",
+                iconImage: "../logos/salattracker-icon.png",
                 gradient: "gradient-2",
-                rating: 4.6,
-                ratingCount: 1523,
-                ratingBars: [78, 18, 3, 1, 0],
-                developer: "Apple Inc.",
-                version: "5.1.0",
-                size: "245 MB",
-                updated: "Jan 10, 2024",
-                requires: "iOS 15.0+",
-                language: "English, Spanish, French, German",
-                price: "Free",
-                subtitle: "Learn Swift programming interactively",
-                description: "Swift Playground makes learning and teaching Swift interactive and engaging. Explore concepts with live code and stunning visualizations. Perfect for beginners and experienced programmers alike.",
-                features: [
-                    { icon: "📖", name: "Interactive Lessons", desc: "Hands-on coding tutorials for all levels" },
-                    { icon: "✨", name: "Live Visualization", desc: "See code results instantly as you type" },
-                    { icon: "🎯", name: "Guided Challenges", desc: "Progressive difficulty learning path" },
-                    { icon: "🌍", name: "Community Share", desc: "Share and discover playgrounds" }
-                ],
-                reviews: [
-                    { author: "Emma Johnson", date: "3 days ago", stars: 5, title: "Perfect learning tool", body: "This app makes learning Swift fun and intuitive. Great for both kids and adults!" },
-                    { author: "David Park", date: "1 week ago", stars: 4, title: "Good foundation builder", body: "Excellent for beginners, though advanced topics need more depth." }
-                ]
-            },
-            3: {
-                name: "DevTools Pro",
-                icon: "",
-                category: "Development",
-                gradient: "gradient-3",
-                rating: 4.7,
-                ratingCount: 934,
-                ratingBars: [82, 14, 3, 1, 0],
-                developer: "DevTools Inc.",
-                version: "3.5.2",
-                size: "89 MB",
-                updated: "Jan 12, 2024",
+                category: "Productivity",
+                rating: 0,
+                ratingCount: 0,
+                ratingBars: [0, 0, 0, 0, 0],
+                developer: "IPABD",
+                version: "1.0.0",
+                size: "—",
+                updated: "Jul 7, 2026",
                 requires: "iOS 16.0+",
-                language: "English, Spanish, French, German, Portuguese",
-                price: "$9.99",
-                subtitle: "Complete developer toolkit in your pocket",
-                description: "DevTools Pro brings powerful development utilities to your iOS device. Debug, test, monitor, and optimize your apps with professional-grade tools designed for modern development.",
-                features: [
-                    { icon: "🔍", name: "Network Debugger", desc: "Monitor HTTP/HTTPS requests in real-time" },
-                    { icon: "💾", name: "Local Storage Inspector", desc: "Browse and edit app databases easily" },
-                    { icon: "📱", name: "Device Info", desc: "Complete system and hardware information" },
-                    { icon: "⚙️", name: "Configuration Manager", desc: "Manage app settings and preferences" },
-                    { icon: "🎭", name: "UI Inspector", desc: "Analyze view hierarchy and properties" }
+                language: "English, Bengali, Arabic",
+                price: "Free",
+                subtitle: "Cultivate consistency, track your prayers, and deepen your devotion with a beautifully minimal, distraction-free Islamic companion.",
+                description: "In a fast-paced world, staying deeply connected to your daily worship requires intention and the right tools. Salat Tracker blends an elegant, modern iOS aesthetic with powerful, native features to support your spiritual journey. From real-time prayer countdowns to specialized hourly reminders, Salat Tracker serves as a peaceful, ad-free space right on your iPhone.",
+                ipaUrl: RELEASE_BASE + "SalatTracker.ipa",
+                screenshots: [
+                    "screenshots/salat-tracker/1.jpg",
+                    "screenshots/salat-tracker/2.jpg",
+                    "screenshots/salat-tracker/3.jpg",
+                    "screenshots/salat-tracker/4.jpg",
+                    "screenshots/salat-tracker/5.jpg",
+                    "screenshots/salat-tracker/6.jpg"
                 ],
-                reviews: [
-                    { author: "Tech Guru", date: "4 days ago", stars: 5, title: "Essential app for developers", body: "This should be on every developer's device. Network debugging alone is worth the price." },
-                    { author: "Sarah Mitchell", date: "1 week ago", stars: 5, title: "Professional tools at hand", body: "Great alternative to desktop tools when on the go. Highly recommend!" }
-                ]
-            },
-            4: {
-                name: "Code Scanner",
-                icon: "📷",
-                category: "Utility",
-                gradient: "gradient-4",
-                rating: 4.5,
-                ratingCount: 2156,
-                ratingBars: [75, 20, 4, 1, 0],
-                developer: "Scanner Labs",
-                version: "2.8.1",
-                size: "156 MB",
-                updated: "Jan 18, 2024",
-                requires: "iOS 14.0+",
-                language: "English, Spanish, French, German, Chinese, Japanese",
-                price: "Free (Pro $4.99/month)",
-                subtitle: "Scan, recognize, and convert code",
-                description: "Code Scanner uses advanced vision technology to recognize code from images and convert them into editable text. Perfect for learning from screenshots, books, or whiteboards.",
                 features: [
-                    { icon: "📸", name: "Image Recognition", desc: "Scans code from photos and screenshots" },
-                    { icon: "✏️", name: "Code Editing", desc: "Edit recognized code directly in app" },
-                    { icon: "💾", name: "Save & Export", desc: "Export as text, PDF, or code files" },
-                    { icon: "🌐", name: "Multi-Language", desc: "Recognizes 50+ programming languages" },
-                    { icon: "☁️", name: "Cloud Sync", desc: "Sync scans across devices" }
+                    { icon: "🕌", name: "Intelligent Prayer Dashboard", desc: "Stay fully aware of your day with an active daily timeline: location-specific prayer times, daily completion tracking, and a live countdown for the current Waqt." },
+                    { icon: "🤲", name: "Bilingual Dua & Azkar Collection", desc: "A massive library of authentic supplications with English and Bengali titles, organized into categories like Salat, Morning & Evening, Sleep, Ramadan, and more." },
+                    { icon: "⏰", name: "Durud & Quiet Hours", desc: "Gentle reminders to recite Durud at a custom interval, with a Quiet Hours mode that automatically silences reminders during your sleep window." },
+                    { icon: "📖", name: "The Holy Quran Hub", desc: "A clean, beautifully typeset Quran interface. Search by Surah name or number, with clear Makki/Madani indicators and Ayah counts at a glance." },
+                    { icon: "🧭", name: "Precision Qibla Compass", desc: "Find the direction of Mecca instantly with real-time Qibla bearing, compass heading, and the exact angle difference to align correctly." },
+                    { icon: "🛠️", name: "Essential Islamic Tools", desc: "A digital Tasbih Counter, a full Hijri calendar with Islamic events, a step-by-step Hajj & Umrah guide, and the 99 Names of Allah." }
                 ],
-                reviews: [
-                    { author: "Tom Anderson", date: "5 days ago", stars: 5, title: "Amazing technology", body: "The OCR accuracy is incredible. Saves so much time when learning from books." },
-                    { author: "Jessica Brown", date: "2 weeks ago", stars: 4, title: "Helpful but limited free version", body: "Great app with premium features that are worth the subscription." }
-                ]
+                reviews: []
             }
+            // 2: { ... second app goes here ... }
         };
 
         // ========== THEME TOGGLE ==========
@@ -588,26 +512,25 @@
             return `
             <div class="app-hero fade-in">
                 <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px;">
-                    <div class="app-icon ${app.gradient}">${app.icon}</div>
+                    <div class="app-icon ${app.gradient}" style="${app.iconImage ? 'padding:0; overflow:hidden;' : ''}">${app.iconImage ? `<img src="${app.iconImage}" alt="${app.name} icon" style="width:100%; height:100%; object-fit:cover; border-radius:inherit;">` : app.icon}</div>
                 </div>
                 <div class="app-header">
                     <div>
                         <h1 class="app-title">${app.name}</h1>
-                        <p class="app-subtitle">${app.description}</p>
+                        <p class="app-subtitle">${app.subtitle || app.description}</p>
                     </div>
                     <div class="app-meta">
                         <div class="app-rating">
-                            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                            ${app.rating}
+                            ${app.ratingCount > 0 ? `<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> ${app.rating}` : 'New'}
                         </div>
                         <span>${app.category}</span>
                         <span>${app.price}</span>
                     </div>
                     <div class="app-actions">
-                        <button class="btn btn-primary" id="getBtn">
+                        <a class="btn btn-primary" id="getBtn" href="${app.ipaUrl}" download>
                             <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                            Get App
-                        </button>
+                            Download .ipa
+                        </a>
                         <button class="btn btn-secondary" id="wishlistBtn">
                             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
                             Add to Wishlist
@@ -622,10 +545,7 @@
                     Screenshots
                 </div>
                 <div class="screenshots-scroll">
-                    <div class="screenshot" style="background: linear-gradient(135deg, #00D4FF 0%, #6B5FFF 100%); display: flex; align-items: center; justify-content: center; font-size: 48px;">📱</div>
-                    <div class="screenshot" style="background: linear-gradient(135deg, #0099FF 0%, #FF00FF 100%); display: flex; align-items: center; justify-content: center; font-size: 48px;">⚙️</div>
-                    <div class="screenshot" style="background: linear-gradient(135deg, #6B5FFF 0%, #FF006E 100%); display: flex; align-items: center; justify-content: center; font-size: 48px;">📊</div>
-                    <div class="screenshot" style="background: linear-gradient(135deg, #00D4FF 0%, #FF00FF 100%); display: flex; align-items: center; justify-content: center; font-size: 48px;">🎯</div>
+                    ${(app.screenshots || []).map((s, i) => `<div class="screenshot"><img src="${s}" alt="${app.name} screenshot ${i + 1}" loading="lazy"></div>`).join('')}
                 </div>
             </div>
 
@@ -685,6 +605,7 @@
                     </div>
                 </div>
                 <div class="rating-summary">
+                    ${app.ratingCount > 0 ? `
                     <div style="text-align:center">
                         <div class="rating-big gradient-text">${app.rating}</div>
                         <div class="rating-stars-big">${'★'.repeat(Math.floor(app.rating))}${'☆'.repeat(5 - Math.floor(app.rating))}</div>
@@ -698,10 +619,14 @@
                                 <div class="rating-bar-fill" style="width:${app.ratingBars[i]}%"></div>
                             </div>
                         </div>`).join('')}
-                    </div>
+                    </div>` : `
+                    <div style="text-align:center; padding: 8px 0;">
+                        <div class="rating-big gradient-text">New</div>
+                        <div class="rating-total">No ratings yet</div>
+                    </div>`}
                 </div>
                 <div class="reviews-list" style="margin-top: 20px;">
-                    ${app.reviews.map(r => `
+                    ${app.reviews.length ? app.reviews.map(r => `
                     <div class="review-card">
                         <div class="review-header">
                             <span class="review-author">${r.author}</span>
@@ -710,7 +635,7 @@
                         <div class="review-stars">${'★'.repeat(r.stars)}${'☆'.repeat(5 - r.stars)}</div>
                         <div class="review-title">${r.title}</div>
                         <div class="review-body">${r.body}</div>
-                    </div>`).join('')}
+                    </div>`).join('') : `<p style="color: var(--text-secondary); font-size: 14px;">No reviews yet — be the first to try it out.</p>`}
                 </div>
             </div>
 
@@ -723,10 +648,10 @@
                 <div class="related-grid" style="margin-top: 20px;">
                     ${related.map(r => `
                     <div class="related-card" onclick="window.location.href='apps.html?id=${Object.keys(appsDatabase).find(k => appsDatabase[k].name === r.name)}'">
-                        <div class="related-icon ${r.gradient}">${r.icon}</div>
+                        <div class="related-icon ${r.gradient}" style="${r.iconImage ? 'padding:0; overflow:hidden;' : ''}">${r.iconImage ? `<img src="${r.iconImage}" alt="${r.name} icon" style="width:100%; height:100%; object-fit:cover; border-radius:inherit;">` : r.icon}</div>
                         <div class="related-name">${r.name}</div>
                         <div class="related-cat">${r.category}</div>
-                        <div class="related-rating">${'★'.repeat(Math.floor(r.rating))} ${r.rating}</div>
+                        <div class="related-rating">${r.ratingCount > 0 ? `★ ${r.rating}` : 'New'}</div>
                     </div>`).join('')}
                 </div>
             </div>` : ''}
@@ -756,18 +681,17 @@
                     setTimeout(() => el.classList.add('visible'), i * 60);
                 });
 
-                // Get button
+                // Get button - real download link, just show a brief confirmation
                 const getBtn = document.getElementById('getBtn');
                 if (getBtn) {
                     getBtn.addEventListener('click', () => {
                         if (getBtn.dataset.added) return;
                         getBtn.dataset.added = '1';
-                        getBtn.innerHTML = `<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Added`;
-                        getBtn.style.opacity = '0.85';
+                        const original = getBtn.innerHTML;
+                        getBtn.innerHTML = `<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Downloading…`;
                         setTimeout(() => {
                             delete getBtn.dataset.added;
-                            getBtn.innerHTML = `<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Get App`;
-                            getBtn.style.opacity = '1';
+                            getBtn.innerHTML = original;
                         }, 2500);
                     });
                 }
